@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs
+/Debug
+/repo
+/Scheme2Hack.vcxproj.user
+/Scheme2Hack.vcxproj.filters
+/Scheme2Hack.vcxproj
+/Scheme2Hack.sln

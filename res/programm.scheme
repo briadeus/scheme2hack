@@ -1,0 +1,3 @@
+(defun double (x) (* x 2))
+; some comment
+(+ 2 3)
