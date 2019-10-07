@@ -1,9 +1,11 @@
 #include "scanner.h"
-
+#include <iostream>
 
 int main() {
-	Scanner s("C:\\dev\\source\\scheme2hack\\res\\programm.scheme");
-	s.hasNext();
+  Scanner s("C:\\dev\\source\\scheme2hack\\res\\programm.scheme");
+  std::cout << "starting";
 
-	return 0;
+  s.hasNext();
+
+  return 0;
 }

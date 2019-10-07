@@ -5,6 +5,7 @@
 /.vs
 /Debug
 /repo
+/src/out
 /Scheme2Hack.vcxproj.user
 /Scheme2Hack.vcxproj.filters
 /Scheme2Hack.vcxproj
