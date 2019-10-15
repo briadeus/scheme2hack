@@ -50,7 +50,7 @@ bool Scanner::tokenizeChunk(std::string line) {
         break; // end line comment, finish parsing
       }
     } else {
-      // std::cout << " TOKEN " << token << "\n";
+      std::cout << " TOKEN " << token << "\n";
       tokensBuffer.push_back(token);
     }
 
@@ -70,4 +70,30 @@ std::string Scanner::nextToken() {
   }
 
   return token;
+}
+
+TokenType Scanner::getTokenType(std::string token) {
+  if (token[0] == '"') {
+    return TokenType::stringVal;
+  } else if (!token.empty() &&
+             token.find_first_not_of("0123456789") == std::string::npos) {
+    return TokenType::numVal;
+  }
+  // else if (token.size() == 1) {
+
+  //  char t = token[0];
+
+  //  for (int i = 0; i < SYMBOLS_SIZE; i++) {
+  //    if (t == SYMBOLS[i]) {
+  //      return TokenType::symbol;
+  //    }
+  //  }
+  //  return TokenType::identifier;
+  //} else if (binary_search(KEYWORDS_SORTED.begin(), KEYWORDS_SORTED.end(),
+  //                         token)) {
+  //  //return TokenType::keyWord;
+  //}
+  else {
+    return TokenType::identifier;
+  }
 }

@@ -3,9 +3,8 @@
 ################################################################################
 
 /.vs
-/Debug
 /repo
-/src/out
+/out/**
 /Scheme2Hack.vcxproj.user
 /Scheme2Hack.vcxproj.filters
 /Scheme2Hack.vcxproj
